@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="v4l4j">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/annotations/v4l4j" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar:///usr/share/java/v4l4j.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/temp/delTemp/v4l4j-0.9.0/src" />
+    </SOURCES>
+  </library>
+</component>
