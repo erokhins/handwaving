@@ -1,0 +1,1 @@
+xte 'keydown Control_L' 'key minus' 'keyup Control_L'

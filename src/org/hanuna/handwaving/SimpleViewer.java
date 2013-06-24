@@ -18,6 +18,9 @@ package org.hanuna.handwaving;/*
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
+import java.awt.image.ColorModel;
+import java.awt.image.WritableRaster;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -167,5 +170,12 @@ public class SimpleViewer extends WindowAdapter implements CaptureCallback{
 
         // recycle the frame
         frame.recycle();
+    }
+
+    public static BufferedImage deepCopy(BufferedImage bi) {
+        ColorModel cm = bi.getColorModel();
+        boolean isAlphaPremultiplied = cm.isAlphaPremultiplied();
+        WritableRaster raster = bi.copyData(null);
+        return new BufferedImage(cm, raster, isAlphaPremultiplied, null);
     }
 }
